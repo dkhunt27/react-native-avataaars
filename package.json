@@ -1,5 +1,7 @@
 {
   "name": "react-native-avataaars",
+  "version": "2.1.0",
+  "description": "React Native component for Avataaars",
   "keywords": [
     "react",
     "native",
@@ -10,8 +12,6 @@
   ],
   "homepage": "https://github.com/tom555my/react-native-avataaars",
   "bugs": "https://github.com/tom555my/react-native-avataaars/issues",
-  "version": "2.0.1",
-  "description": "React Native component for Avataaars",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -32,7 +32,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "avataaars": "https://github.com/JacobDel/avataaars#2.2.1",
+    "avataaars": "https://github.com/dkhunt27/avataaars#2.3.0",
     "react-native-svg": "^13.13.0",
     "text-encoding": "^0.7.0"
   }
