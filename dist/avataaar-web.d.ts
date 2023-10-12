@@ -1,6 +1,6 @@
 import * as React from "react";
-import "./globals.js";
 import { AvataaarProps } from "avataaars";
-export declare const AvatarDangerousWeb: React.MemoExoticComponent<(props: import("avataaars").AvataaarCategories & import("avataaars").AvataaarSettings & {
+export declare const AvatarDangerousWeb: React.MemoExoticComponent<(props: {
+    avatar: AvataaarProps;
     size: number;
 }) => React.JSX.Element>;

@@ -11,16 +11,15 @@ var __assign = (this && this.__assign) || function () {
 };
 import * as React from "react";
 import { SvgXml } from "react-native-svg";
-import "./globals.js";
 import { PixelRatio } from "react-native";
 import { renderToString } from "react-dom/server";
 import { Avatar as AvatarReact } from "avataaars";
 export var Avatar = React.memo(function (props) {
-    var size = props.size;
-    var avatar = React.useMemo(function () { return (React.createElement(AvatarReact, __assign({ style: {
+    var avatar = props.avatar, size = props.size;
+    var avatarReact = React.useMemo(function () { return (React.createElement(AvatarReact, __assign({ style: {
             width: PixelRatio.getPixelSizeForLayoutSize(size),
             height: PixelRatio.getPixelSizeForLayoutSize(size),
-        } }, props))); }, [props]);
-    var svgString = renderToString(avatar);
+        } }, avatar))); }, [avatar]);
+    var svgString = renderToString(avatarReact);
     return React.createElement(SvgXml, { xml: svgString, width: "100%", height: "100%" });
 });

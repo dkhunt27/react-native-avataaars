@@ -10,16 +10,15 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 import * as React from "react";
-import "./globals.js";
 import { PixelRatio } from "react-native";
 import { renderToString } from "react-dom/server";
 import { Avatar as AvatarReact } from "avataaars";
 export var AvatarDangerousWeb = React.memo(function (props) {
-    var size = props.size;
-    var avatar = React.useMemo(function () { return (React.createElement(AvatarReact, __assign({ style: {
+    var avatar = props.avatar, size = props.size;
+    var avatarReact = React.useMemo(function () { return (React.createElement(AvatarReact, __assign({ style: {
             width: PixelRatio.getPixelSizeForLayoutSize(size),
             height: PixelRatio.getPixelSizeForLayoutSize(size),
-        } }, props))); }, [props]);
-    var svgString = renderToString(avatar);
+        } }, avatar))); }, [avatar]);
+    var svgString = renderToString(avatarReact);
     return React.createElement("div", { dangerouslySetInnerHTML: { __html: svgString } });
 });

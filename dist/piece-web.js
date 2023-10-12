@@ -10,7 +10,6 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 import * as React from "react";
-import "./globals.js";
 import { renderToString } from "react-dom/server";
 import { Piece as PieceReact } from "avataaars";
 export var PieceDangerousWeb = React.memo(function (props) {

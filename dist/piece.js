@@ -11,7 +11,6 @@ var __assign = (this && this.__assign) || function () {
 };
 import * as React from "react";
 import { SvgXml } from "react-native-svg";
-import "./globals.js";
 import { renderToString } from "react-dom/server";
 import { Piece as PieceReact } from "avataaars";
 export var Piece = React.memo(function (props) {
