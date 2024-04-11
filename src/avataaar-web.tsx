@@ -1,3 +1,6 @@
+// resolves Property 'TextEncoder' does not exist in iOS
+import "fast-text-encoding";
+
 import * as React from "react";
 import { PixelRatio } from "react-native";
 import { renderToString } from "react-dom/server";

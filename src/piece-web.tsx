@@ -1,3 +1,6 @@
+// resolves Property 'TextEncoder' does not exist in iOS
+import "fast-text-encoding";
+
 import * as React from "react";
 import { renderToString } from "react-dom/server";
 import { Piece as PieceReact, PieceProps } from "avataaars";

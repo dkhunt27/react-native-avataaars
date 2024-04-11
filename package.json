@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "avataaars": "https://github.com/dkhunt27/avataaars#2.3.0",
+    "fast-text-encoding": "^1.0.6",
     "react-native-svg": "^13.13.0",
     "text-encoding": "^0.7.0"
   }

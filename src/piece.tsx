@@ -1,3 +1,6 @@
+// resolves Property 'TextEncoder' does not exist in iOS
+import "fast-text-encoding";
+
 import * as React from "react";
 import { SvgXml} from "react-native-svg";
 import { renderToString } from "react-dom/server";
